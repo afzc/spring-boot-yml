@@ -8,7 +8,7 @@ spring:
     password: ne0ris
     driver-class-name: oracle.jdbc.driver.OracleDriver
   jpa:
-    database-platform: org.hibernate.dialect.Oracle10gDialect
+    database-platform: org.hibernate.dialect.Oracle12cDialect
     show-sql: true
     hibernate:
       ddl-auto: update
@@ -29,15 +29,23 @@ logging:
         web:
           servlet:
             DispatcherServlet: INFO
-app:
-  message:
-    error: ERROR APP
-  code:
-    error: ERROR-01
+api:
+  error:
+    demo1:
+      message: ERROR DEMO1
+      code: ERROR-01
+    demo2:
+      message: ERROR DEMO2
+      code: ERROR-02
+    demo3:
+      message: ERROR DEMO3
+      code: ERROR-03
+    demo4:
+      message: ERROR DEMO3
+      code: ERROR-03
   propertie:
-    test: Valor Propiedad Test
-global:
-  api:
+    demo5: Valor Propiedad DEMO5
+  common:
     basePackage: mx.stmx.bo.demo.controller
     antPattern: /*
     title: DEMO API REST MS ISBAN BO
