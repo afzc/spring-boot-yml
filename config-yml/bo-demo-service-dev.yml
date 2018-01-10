@@ -1,5 +1,5 @@
 server:
-  port: 8085
+  port: 8081
   servletPath: /bo-demo-service
 spring:
   datasource:
@@ -37,16 +37,16 @@ app:
   propertie:
     test: Valor Propiedad Test
 global:
-  message:
-    error: ERROR GLOBAL
-  code:
-    error: ERROR-00
   api:
-    package: mx.stmx.bo.demo.controller
+    basePackage: mx.stmx.bo.demo.controller
+    antPattern: /*
     title: DEMO API REST MS ISBAN BO
     description: API REST demo base para backoffice ISBAN
     version: 1.0-SNAPSHOT
     terms: Solo usar como guia
     author: Alan F. Zuñiga Correa
+    url: www.test.com
     mail: alan.zuniga@neoris.com
     hystrixMapping: /hystrix.stream
+    errorMessage: ERROR GLOBAL
+    errorCode: ERROR-00
