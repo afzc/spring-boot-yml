@@ -45,7 +45,7 @@ global:
     version: 1.0-SNAPSHOT
     terms: Solo usar como guia
     author: Alan F. Zuñiga Correa
-    url: www.test.com
+    uri: www.test.com
     mail: alan.zuniga@neoris.com
     hystrixMapping: /hystrix.stream
     errorMessage: ERROR GLOBAL
